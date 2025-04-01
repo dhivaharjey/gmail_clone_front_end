@@ -53,7 +53,7 @@ const ProfileIcon = () => {
     if (authTokens?.token) {
       try {
         const response = await axios.get(
-          `${process.env.REACT_APP_BACK_END_URL}/user/get-user-details`,
+          `${import.meta.env.VITE_BACK_END_URL}/user/get-user-details`,
           {
             headers: {
               Authorization: `Bearer ${authTokens.token}`,

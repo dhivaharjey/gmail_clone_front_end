@@ -6,7 +6,7 @@ const AuthContext = createContext();
 const validateToken = async (token) => {
   try {
     const response = await axios.get(
-      `${process.env.REACT_APP_BACK_END_URL}/user/check-auth`,
+      `${import.meta.env.VITE_BACK_END_URL}/user/check-auth`,
       {
         headers: { Authorization: `Bearer ${token}` },
       }
@@ -20,7 +20,7 @@ const validateToken = async (token) => {
 const refreshAccessToken = async (refreshToken) => {
   try {
     const response = await axios.post(
-      `${process.env.REACT_APP_BACK_END_URL}/user/refresh-token`,
+      `${import.meta.env.VITE_BACK_END_URL}/user/refresh-token`,
       { refreshToken }
     );
     return response.data;

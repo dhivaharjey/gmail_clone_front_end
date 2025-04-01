@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_BACK_END_URL;
+const API_URL = import.meta.env.VITE_BACK_END_URL;
 // console.log(process.env.REACT_APP_USERNAME);
 const API_GMAIL = async (urlObject, payload, type) => {
   return await axios({

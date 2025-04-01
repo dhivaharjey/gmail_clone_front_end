@@ -40,7 +40,7 @@ const UserLogin = () => {
       setSubmitting(true);
       try {
         const res = await axios.post(
-          `${process.env.REACT_APP_BACK_END_URL}/user/login`,
+          `${import.meta.env.VITE_BACK_END_URL}/user/login`,
           values
         );
 

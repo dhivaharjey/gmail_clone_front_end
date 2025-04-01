@@ -34,7 +34,7 @@ const ResetPassword = () => {
     const verifyToken = async () => {
       try {
         await axios.get(
-          `${process.env.REACT_APP_BACK_END_URL}/user/verify-token/${token}`
+          `${import.meta.env.VITE_BACK_END_URL}/user/verify-token/${token}`
         );
       } catch (error) {
         setInvalidToken(true);
@@ -54,7 +54,7 @@ const ResetPassword = () => {
       setSubmitting(true);
       try {
         const res = await axios.post(
-          `${process.env.REACT_APP_BACK_END_URL}/user/reset-password/${token}`,
+          `${import.meta.env.VITE_BACK_END_URL}/user/reset-password/${token}`,
           {
             newPassword: values.newPassword,
           }

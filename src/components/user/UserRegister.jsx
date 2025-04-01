@@ -60,7 +60,7 @@ const UserRegister = () => {
       setSubmitting(true);
       try {
         const response = await axios.post(
-          `${process.env.REACT_APP_BACK_END_URL}/user/register`,
+          `${import.meta.env.VITE_BACK_END_URL}/user/register`,
           values
         );
         if (response?.data?.status === true) {
