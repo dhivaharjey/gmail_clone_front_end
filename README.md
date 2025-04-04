@@ -5,8 +5,7 @@
 ### WORKING VIDEO 
 [Working Video](https://github.com/user-attachments/assets/2e19fd87-fa4a-4f19-ad17-a300074e8459)
 ---
-### PROFILE UPLOAD
-[profile Upload](https://github.com/user-attachments/assets/f291cabb-f4ba-4ed9-8e38-aa5b03cf06a7)
+
 ---
 ### AUTOMATIC LOGOUT (token expires)
 [Automatic log out](https://github.com/user-attachments/assets/ec65eec1-633c-47f4-99fd-64aae20b3459)
